@@ -1,5 +1,6 @@
 package meabh;
 
-public abstract class Animal {
-    
+public abstract class Animal implements Milkable {
+    int id;
+
 }

@@ -1,5 +1,5 @@
 package meabh;
 
-public class Shed extends AbstractShed{
+public class Shed {
     
 }

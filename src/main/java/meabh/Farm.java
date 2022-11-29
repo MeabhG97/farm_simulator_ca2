@@ -1,8 +1,8 @@
 package meabh;
 
-public class Farm extends AbstractFarm {
+public class Farm {
     
     public Farm(int id, String farmer){
-        super(id, farmer);
+        
     }
 }
