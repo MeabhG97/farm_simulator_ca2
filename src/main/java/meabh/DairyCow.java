@@ -12,10 +12,12 @@ public class DairyCow extends Animal implements Milkable {
     private MilkType milkType = MilkType.COW;
 
     public DairyCow(){
+        super();
         this.udderCapacity = randomUdderCapacity();
     }
 
     public DairyCow(String name){
+        super();
         this.udderCapacity = randomUdderCapacity();
     }
 
@@ -25,7 +27,7 @@ public class DairyCow extends Animal implements Milkable {
     }
 
     private static double randomUdderCapacity(){
-        return (rand.nextDouble() * MIN_UDDER_CAPACITY) + MIN_UDDER_CAPACITY;
+        return (rand.nextDouble() * (MAX_UDDER_CAPACITY - MIN_UDDER_CAPACITY)) + MIN_UDDER_CAPACITY;
     }
 
     public String getName() {
@@ -39,5 +41,8 @@ public class DairyCow extends Animal implements Milkable {
     public double getUdderCapacity() {
         return udderCapacity;
     }
-    
+
+    public MilkType getMilkType(){
+        return milkType;
+    }
 }
