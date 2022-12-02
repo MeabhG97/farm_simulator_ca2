@@ -2,7 +2,7 @@ package meabh;
 
 import java.util.Random;
 
-public enum BeefGrade {
+public enum MeatGrade {
     E1(4.7), E2(6.1), E3(6.3), E4(5.7), E5(4.5),
     U1(4.1), U2(5.5), U3(5.7), U4(5.3), U5(4.2),
     R1(3.3), R2(4.9), R3(5.1), R4(4.7), R5(3.5),
@@ -13,12 +13,12 @@ public enum BeefGrade {
 
     private static final Random rand = new Random();
 
-    private BeefGrade(double valuePerKG){
+    private MeatGrade(double valuePerKG){
         this.valuePerKG = valuePerKG;
     }
 
-    public static BeefGrade getRandomGrade(){
-        BeefGrade[] grades = values();
+    public static MeatGrade getRandomGrade(){
+        MeatGrade[] grades = values();
         return grades[rand.nextInt(grades.length)];
     }
 }

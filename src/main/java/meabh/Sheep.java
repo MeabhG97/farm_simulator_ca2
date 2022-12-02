@@ -1,14 +1,13 @@
 package meabh;
 
-public class BeefCow extends Animal {
-    private final double MAX_WEIGHT = 1000;
-    private final double MIN_WEIGHT = 700;
+public class Sheep extends Animal {
+    private static final double MAX_WEIGHT = 160;
+    private static final double MIN_WEIGHT = 90;
 
     private double weight;
     private MeatGrade grade;
 
-
-    public BeefCow(){
+    public Sheep(){
         super();
         this.weight = randomWeight();
         grade = MeatGrade.getRandomGrade();
@@ -18,15 +17,11 @@ public class BeefCow extends Animal {
         return RandomUtility.randomBetweenMinMax(MIN_WEIGHT, MAX_WEIGHT);
     }
 
-    public double getValue(){
-        return weight * grade.valuePerKG;
-    }
-
-    public double getWeight(){
+    public double getWeight() {
         return weight;
     }
 
-    public MeatGrade getGrade(){
+    public MeatGrade getGrade() {
         return grade;
     }
 }
