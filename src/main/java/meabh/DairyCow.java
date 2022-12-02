@@ -42,6 +42,7 @@ public class DairyCow extends Animal implements Milkable {
         return udderCapacity;
     }
 
+    @Override
     public MilkType getMilkType(){
         return milkType;
     }

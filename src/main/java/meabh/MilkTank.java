@@ -5,7 +5,7 @@ public class MilkTank {
 
     private double capacity;
     private double volumeMilk = 0;
-    private MilkType milkType;
+    private MilkType milkType = null;
 
     public MilkTank(){
         this.capacity = STANDARD_CAPACITY;
@@ -21,6 +21,11 @@ public class MilkTank {
 
     public void addToTank(double volume){
         volumeMilk += volume;
+    }
+
+    public void addToTank(double volume, MilkType type){
+        volumeMilk += volume;
+        milkType = type;
     }
 
     public double getCapacity() {

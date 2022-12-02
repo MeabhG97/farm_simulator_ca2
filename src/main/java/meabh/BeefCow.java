@@ -21,6 +21,10 @@ public class BeefCow extends Animal {
         return (rand.nextDouble() * (MAX_WEIGHT - MIN_WEIGHT)) + MIN_WEIGHT;
     }
 
+    public double getValue(){
+        return weight * grade.valuePerKG;
+    }
+
     public double getWeight(){
         return weight;
     }

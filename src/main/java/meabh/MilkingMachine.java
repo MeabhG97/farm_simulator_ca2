@@ -8,7 +8,13 @@ public class MilkingMachine {
 
     public void milk(Milkable milkableAnimal){
         double milk = milkableAnimal.milkAnimal();
-        tank.addToTank(milk);
+        MilkType type = milkableAnimal.getMilkType();
+        if(tank.getMilkType() == type){
+            tank.addToTank(milk);
+        }
+        else if(tank.getMilkType() == null){
+            tank.addToTank(milk, type);
+        }
     }
 
     public MilkTank geMilkTank(){
