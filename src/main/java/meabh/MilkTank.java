@@ -28,6 +28,19 @@ public class MilkTank {
         milkType = type;
     }
 
+    public double getfromFrom(double amount){
+        if(amount <= getVolumeMilk()){
+            return amount;
+        }
+        else{
+            return getVolumeMilk();
+        }
+    }
+
+    public double emptyTank(){
+        return getVolumeMilk();
+    }
+
     public double getCapacity() {
         return capacity;
     }
@@ -42,6 +55,7 @@ public class MilkTank {
 
     @Override
     public String toString() {
-        return "MilkTank [capacity=" + capacity + ", volumeMilk=" + volumeMilk + "]";
+        return "MilkTank [capacity=" + capacity + ", volumeMilk=" + volumeMilk + ", milkType=" + milkType + "]";
     }
+
 }

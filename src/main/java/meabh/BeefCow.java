@@ -29,4 +29,9 @@ public class BeefCow extends Animal {
     public MeatGrade getGrade(){
         return grade;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " [weight=" + weight + ", grade=" + grade + "]";
+    }
 }

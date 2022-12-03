@@ -12,4 +12,11 @@ public abstract class Animal {
     public int getAnimalId(){
         return id;
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + " [id=" + id + "]";
+    }
+
+    
 }

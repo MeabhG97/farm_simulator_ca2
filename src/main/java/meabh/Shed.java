@@ -8,9 +8,13 @@ public class Shed {
     private MilkTank tank;
     private ArrayList<Animal> herd;
 
+    private static int shedCount = 0;
+
     public Shed(MilkTank tank){
         this.tank = tank;
         this.herd = new ArrayList<>();
+        this.id = shedCount;
+        shedCount++;
     }
 
     public void installMilkingMachine(MilkingMachine machine){

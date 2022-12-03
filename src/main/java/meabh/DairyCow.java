@@ -43,4 +43,9 @@ public class DairyCow extends Animal implements Milkable {
     public MilkType getMilkType(){
         return milkType;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " [name=" + name + ", udderCapacity=" + udderCapacity + ", milkType=" + milkType + "]";
+    }
 }
