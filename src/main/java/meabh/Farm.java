@@ -23,6 +23,23 @@ public class Farm {
         }
     }
 
+    public void deathOfAnimal(int animalId){
+        for(Shed shed : sheds){
+            int animalIndex = shed.hasAnimal(animalId);
+            if(animalIndex> -1){
+                shed.removeAnimal(animalIndex);
+            }
+        }
+    }
+
+    public void mikCollection(){
+        double total = 0;
+        for(Shed shed : sheds){
+            total += shed.emmptyMilkTank();
+        }
+        System.out.println(total);
+    }
+
     public int getId() {
         return id;
     }

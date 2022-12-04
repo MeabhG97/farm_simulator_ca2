@@ -30,15 +30,21 @@ public class MilkTank {
 
     public double getfromFrom(double amount){
         if(amount <= getVolumeMilk()){
+            volumeMilk -= amount;
             return amount;
         }
         else{
-            return getVolumeMilk();
+            double v = 0;
+            v = volumeMilk;
+            volumeMilk = 0;
+            return v;
         }
     }
 
     public double emptyTank(){
-        return getVolumeMilk();
+        double v = volumeMilk;
+        volumeMilk = 0;
+        return v;
     }
 
     public double getCapacity() {

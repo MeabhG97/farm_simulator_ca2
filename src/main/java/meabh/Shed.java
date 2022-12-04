@@ -38,6 +38,27 @@ public class Shed {
         }
     }
 
+    public MilkingMachine getMilkingMachine(){
+        return machine;
+    }
+
+    public int hasAnimal(int id){
+        for(int i = 0; i < herd.size(); i++){
+            if(herd.get(i).getAnimalId() == id){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void removeAnimal(int index){
+        herd.remove(index);
+    }
+
+    public double emmptyMilkTank(){
+        return tank.emptyTank();
+    }
+
     public ArrayList<Animal> getHerd(){
         return herd;
     }
