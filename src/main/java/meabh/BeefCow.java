@@ -18,6 +18,7 @@ public class BeefCow extends Animal {
         return RandomUtility.randomBetweenMinMax(MIN_WEIGHT, MAX_WEIGHT);
     }
 
+    @Override
     public double getValue(){
         return weight * grade.valuePerKG;
     }

@@ -10,6 +10,13 @@ public class Shed {
 
     private static int shedCount = 0;
 
+    public Shed(){
+        this.tank = new MilkTank();
+        this.herd = new ArrayList<>();
+        this.id = shedCount;
+        shedCount++;
+    }
+
     public Shed(MilkTank tank){
         this.tank = tank;
         this.herd = new ArrayList<>();
@@ -27,14 +34,22 @@ public class Shed {
     }
 
     public void milkAnimal(Animal animal){
+        milkMachineInstalled();
         if(animal instanceof Milkable){
             machine.milk((Milkable) animal);
         }
     }
 
     public void milkAllAnimals(){
+        milkMachineInstalled();
         for(Animal animal : herd){
             milkAnimal(animal);
+        }
+    }
+
+    private void milkMachineInstalled(){
+        if(machine == null){
+            throw new IllegalStateException("No milking machine installed");
         }
     }
 
@@ -55,7 +70,7 @@ public class Shed {
         herd.remove(index);
     }
 
-    public double emmptyMilkTank(){
+    public double emptyMilkTank(){
         return tank.emptyTank();
     }
 

@@ -29,6 +29,11 @@ public class Goat extends Animal implements Milkable{
     }
 
     @Override
+    public double getValue(){
+        return udderCapacity * 1.28; 
+    }
+
+    @Override
     public String toString() {
         return super.toString() + " [udderCapacity=" + udderCapacity + ", milkType=" + milkType + "]";
     }

@@ -24,4 +24,16 @@ public class Sheep extends Animal {
     public MeatGrade getGrade() {
         return grade;
     }
+
+    @Override
+    public double getValue(){
+        return weight * grade.valuePerKG;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " [weight=" + weight + ", grade=" + grade + "]";
+    }
+
+    
 }

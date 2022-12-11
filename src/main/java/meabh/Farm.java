@@ -18,8 +18,13 @@ public class Farm {
     }
 
     public void milkAllAnimals(){
-        for(Shed shed : sheds){
-            shed.milkAllAnimals();
+        try{
+            for(Shed shed : sheds){
+                shed.milkAllAnimals();
+            }
+        }
+        catch(IllegalStateException e){
+            System.out.println(e);
         }
     }
 
@@ -32,10 +37,10 @@ public class Farm {
         }
     }
 
-    public void mikCollection(){
+    public void milkCollection(){
         double total = 0;
         for(Shed shed : sheds){
-            total += shed.emmptyMilkTank();
+            total += shed.emptyMilkTank();
         }
         System.out.println(total);
     }

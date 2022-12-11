@@ -37,6 +37,7 @@ public class MilkTank {
             double v = 0;
             v = volumeMilk;
             volumeMilk = 0;
+            removeType();
             return v;
         }
     }
@@ -44,7 +45,12 @@ public class MilkTank {
     public double emptyTank(){
         double v = volumeMilk;
         volumeMilk = 0;
+        removeType();
         return v;
+    }
+
+    private void removeType(){
+        milkType = null;
     }
 
     public double getCapacity() {

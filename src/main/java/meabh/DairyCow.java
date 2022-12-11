@@ -10,6 +10,7 @@ public class DairyCow extends Animal implements Milkable {
 
     public DairyCow(){
         super();
+        name = "";
         this.udderCapacity = randomUdderCapacity();
     }
 
@@ -42,6 +43,11 @@ public class DairyCow extends Animal implements Milkable {
     @Override
     public MilkType getMilkType(){
         return milkType;
+    }
+
+    @Override
+    public double getValue(){
+        return udderCapacity * 0.43;
     }
 
     @Override
