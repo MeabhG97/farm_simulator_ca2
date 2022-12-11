@@ -12,21 +12,20 @@ public class FarmMenu {
     public static void FarmMenuAddOptions(){
         farmOptions.add("01. Add new farm");
         farmOptions.add("02. Add new shed");
-        farmOptions.add("03. Edit shed");
-        farmOptions.add("04. Delete shed");
-        farmOptions.add("05. Print detail of shed");
-        farmOptions.add("06. Add new animal");
-        farmOptions.add("07. Edit animal");
-        farmOptions.add("08. Delete animal");
-        farmOptions.add("09. Print detail of animal");
-        farmOptions.add("10. Print detail of farm");
-        farmOptions.add("11. Milk all animals");
-        farmOptions.add("12. Death of an animal");
-        farmOptions.add("13. Milk collection");
-        farmOptions.add("14. Print animals by value");
-        farmOptions.add("15. Save");
-        farmOptions.add("16. Load");
-        farmOptions.add("17. Exit");
+        farmOptions.add("03. Delete shed");
+        farmOptions.add("04. Print detail of shed");
+        farmOptions.add("05. Add new animal");
+        farmOptions.add("06. Edit animal");
+        farmOptions.add("07. Delete animal");
+        farmOptions.add("08. Print detail of animal");
+        farmOptions.add("09. Print detail of farm");
+        farmOptions.add("10. Milk all animals");
+        farmOptions.add("11. Death of an animal");
+        farmOptions.add("12. Milk collection");
+        farmOptions.add("13. Print animals by value");
+        farmOptions.add("14. Save");
+        farmOptions.add("15. Load");
+        farmOptions.add("16. Exit");
     }
 
     public void run(){
@@ -45,44 +44,44 @@ public class FarmMenu {
 
                 switch(selection){
                     case 1 -> {
-                        
+                        FarmManager.addFarm();
                     }
                     case 2 -> {
-                        
+                        FarmManager.addShed();
                     }
                     case 3 -> {
-                        
+                        FarmManager.deleteShed();
                     }
                     case 4 -> {
-                        
+                        FarmManager.printShed();
                     }
                     case 5 -> {
-                        
+                        FarmManager.addAnimal();
                     }
                     case 6 -> {
-                        
+                        FarmManager.editAnimal();
                     }
                     case 7 -> {
-                        
+                        FarmManager.deleteAnimal();
                     }
                     case 8 -> {
-                        
+                        FarmManager.printAnimal();
                     }
                     case 9 -> {
-                        
+                        FarmManager.printFarm();
                     }
 
                     case 10 -> {
-                        
+                        FarmManager.milkAllAnimals();
                     }
                     case 11 -> {
-                        
+                        FarmManager.deathAnimal();
                     }
                     case 12 -> {
-                        
+                        FarmManager.milkCollection();
                     }
                     case 13 -> {
-                        
+                        FarmManager.printValue();
                     }
                     case 14 -> {
                         
@@ -91,9 +90,6 @@ public class FarmMenu {
                         
                     }
                     case 16 -> {
-                        
-                    }
-                    case 17 -> {
                         run = false;
                     }
                 }

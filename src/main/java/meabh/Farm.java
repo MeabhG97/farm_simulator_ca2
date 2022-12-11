@@ -28,10 +28,14 @@ public class Farm {
         }
     }
 
+    public void addShed(Shed shed){
+        sheds.add(shed);
+    }
+
     public void deathOfAnimal(int animalId){
         for(Shed shed : sheds){
             int animalIndex = shed.hasAnimal(animalId);
-            if(animalIndex> -1){
+            if(animalIndex > -1){
                 shed.removeAnimal(animalIndex);
             }
         }
