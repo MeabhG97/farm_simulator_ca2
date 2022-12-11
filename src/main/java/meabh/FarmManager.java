@@ -24,7 +24,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
 
@@ -59,7 +59,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             Farm f = farmList.get(selection);
@@ -69,7 +69,7 @@ public class FarmManager {
                 for(int i = 0; i < f.getSheds().size(); i++){
                     System.out.println("Shed " + (i+1));
                 }
-                selection = keyboardScanner.nextInt();
+                selection = keyboardScanner.nextInt()-1;
     
                 System.out.println("Selection: [Shed " + selection + "]");
                 
@@ -100,7 +100,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             Farm f = farmList.get(selection);
@@ -110,7 +110,7 @@ public class FarmManager {
                 for(int i = 0; i < f.getSheds().size(); i++){
                     System.out.println("Shed " + (i+1));
                 }
-                selection = keyboardScanner.nextInt();
+                selection = keyboardScanner.nextInt()-1;
     
                 System.out.println("Selection: [Shed " + selection + "]");
                 
@@ -141,7 +141,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             Farm f = farmList.get(selection);
@@ -151,7 +151,7 @@ public class FarmManager {
                 for(int i = 0; i < f.getSheds().size(); i++){
                     System.out.println("Shed " + (i+1));
                 }
-                selection = keyboardScanner.nextInt();
+                selection = keyboardScanner.nextInt()-1;
     
                 System.out.println("Selection: [Shed " + selection + "]");
                 
@@ -212,7 +212,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             Farm f = farmList.get(selection);
@@ -222,7 +222,7 @@ public class FarmManager {
                 for(int i = 0; i < f.getSheds().size(); i++){
                     System.out.println("Shed " + (i+1));
                 }
-                selection = keyboardScanner.nextInt();
+                selection = keyboardScanner.nextInt()-1;
     
                 System.out.println("Selection: [Shed " + selection + "]");
                 
@@ -233,7 +233,7 @@ public class FarmManager {
                     for(int i = 0; i < s.getHerd().size(); i++){
                         System.out.println("Animal " + (i+1));
                     }
-                    selection = keyboardScanner.nextInt();
+                    selection = keyboardScanner.nextInt()-1;
         
                     System.out.println("Selection: [Animal " + selection + "]");
                     
@@ -283,7 +283,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             Farm f = farmList.get(selection);
@@ -293,7 +293,7 @@ public class FarmManager {
                 for(int i = 0; i < f.getSheds().size(); i++){
                     System.out.println("Shed " + (i+1));
                 }
-                selection = keyboardScanner.nextInt();
+                selection = keyboardScanner.nextInt()-1;
     
                 System.out.println("Selection: [Shed " + selection + "]");
                 
@@ -304,7 +304,7 @@ public class FarmManager {
                     for(int i = 0; i < s.getHerd().size(); i++){
                         System.out.println("Animal " + (i+1));
                     }
-                    selection = keyboardScanner.nextInt();
+                    selection = keyboardScanner.nextInt()-1;
         
                     System.out.println("Selection: [Animal " + selection + "]");
                     
@@ -345,7 +345,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             Farm f = farmList.get(selection);
@@ -355,7 +355,7 @@ public class FarmManager {
                 for(int i = 0; i < f.getSheds().size(); i++){
                     System.out.println("Shed " + (i+1));
                 }
-                selection = keyboardScanner.nextInt();
+                selection = keyboardScanner.nextInt()-1;
     
                 System.out.println("Selection: [Shed " + selection + "]");
                 
@@ -366,7 +366,7 @@ public class FarmManager {
                     for(int i = 0; i < s.getHerd().size(); i++){
                         System.out.println("Animal " + (i+1));
                     }
-                    selection = keyboardScanner.nextInt();
+                    selection = keyboardScanner.nextInt()-1;
         
                     System.out.println("Selection: [Animal " + selection + "]");
                     
@@ -407,7 +407,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             System.out.println(farmList.get(selection).toString());            
@@ -428,7 +428,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             farmList.get(selection).milkAllAnimals();           
@@ -449,7 +449,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
 
@@ -476,7 +476,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
             farmList.get(selection).milkCollection();          
@@ -497,7 +497,7 @@ public class FarmManager {
             for(int i = 0; i < farmList.size(); i++){
                 System.out.println("Farm " + (i+1));
             }
-            int selection = keyboardScanner.nextInt();
+            int selection = keyboardScanner.nextInt()-1;
 
             System.out.println("Selection: [Farm " + selection + "]");
 

@@ -40,7 +40,7 @@ public class FarmMenu {
                 }
                 int selection = keyboardScanner.nextInt();
 
-                System.out.println("Selection: [" + farmOptions.get(selection) + "]");
+                System.out.println("Selection: [" + farmOptions.get(selection - 1) + "]");
 
                 switch(selection){
                     case 1 -> {
