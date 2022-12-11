@@ -61,5 +61,10 @@ public class Farm {
         return sheds;
     }
 
+    @Override
+    public String toString() {
+        return "Farm [id=" + id + ", farmer=" + farmer + ", sheds=" + sheds + "]";
+    }
+
     
 }
