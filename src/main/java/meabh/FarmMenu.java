@@ -28,7 +28,7 @@ public class FarmMenu {
         farmOptions.add("16. Exit");
     }
 
-    public void run(){
+    public static void run(){
         System.out.println("Welcome");
         FarmMenuAddOptions();
         boolean run = true;
