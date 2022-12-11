@@ -1,5 +1,6 @@
 package meabh;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
@@ -520,6 +521,36 @@ public class FarmManager {
         }
         catch(IndexOutOfBoundsException e){
             System.out.println("Error: Menu option does not exist.");
+        }
+    }
+
+    public static void save(){
+        try{
+            FileOutputStream writeData = new FileOutputStream("farms.ser");
+            ObjectOutputStream wStream = new ObjectOutputStream(writeData);
+
+            wStream.writeObject(farmList);
+            wStream.flush();
+            wStream.close();
+        }
+        catch(IOException e){
+            System.out.println("Write Error");
+        }
+    }
+    
+    public static void load(){
+        try{
+            FileInputStream readData = new FileInputStream("farms.ser");
+            ObjectInputStream rStream = new ObjectInputStream(readData);
+
+            farmList = (ArrayList<Farm>) rStream.readObject();
+            rStream.close();
+        }
+        catch(IOException e){
+            System.out.println("Read Error");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("Class not found");
         }
     }
 }

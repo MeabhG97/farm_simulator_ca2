@@ -84,10 +84,10 @@ public class FarmMenu {
                         FarmManager.printValue();
                     }
                     case 14 -> {
-                        
+                        FarmManager.save();
                     }
                     case 15 -> {
-                        
+                        FarmManager.load();
                     }
                     case 16 -> {
                         run = false;
